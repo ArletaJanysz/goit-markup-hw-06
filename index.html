@@ -27,7 +27,7 @@
 				>
 				<nav class="nav">
 					<ul class="nav-list">
-						<li >
+						<li>
 							<a class="nav-link active" href="./index.html"
 								>Agencja</a
 							>
@@ -507,6 +507,14 @@
 						</li>
 					</ul>
 				</div>
+
+				<form class="news">
+					<label class="newsletter">
+						Zapisz się do newslettera
+						<input class="newsletter-input" type="email" name="email" placeholder="E-mail" />
+					</label>
+					<button class="newsletter-btn" type="button">Zapisz się</button>
+				</form>
 			</div>
 		</footer>
 
@@ -520,16 +528,42 @@
 						height="11" />
 				</button>
 
-
 				<form>
-					<label for="user_name">Imie</label>
-					<input type="text" name="name" id="user_name"/>
+					<!-- <label for="user_name">Imie</label> -->
 
-					<label for="user_number">Telefon</label>
-					<input type="number" name="number" id="user_number"/>
+					<label>
+						Imie
+						<input type="text" name="name" id="user_name" />
+					</label>
 
-					<label for="user_email">Email</label>
-					<input type="email" name="email" id="user_email"/>
+					<label
+						>Telefon
+						<input
+							type="tel"
+							name="phone_number"
+							id="user_phone_number" />
+					</label>
+					<label
+						>Email
+						<input type="email" name="email" id="user_email" />
+					</label>
+					<label>
+						Komentarz
+						<textarea
+							name="feedback"
+							rows="5"
+							placeholder="Wprowadź tekst"></textarea>
+					</label>
+
+					<label>
+						<input
+							type="checkbox"
+							name="regulations"
+							value=""
+							checked />
+						Oświadczam iż akceptuję <a href="">Regulamin</a> i
+						<a href="">Politykę Prywatności.</a>
+					</label>
 
 					<button type="submit">Wyślij</button>
 				</form>
