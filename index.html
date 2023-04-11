@@ -509,11 +509,23 @@
 				</div>
 
 				<form class="news">
-					<label class="newsletter">
-						Zapisz się do newslettera
-						<input class="newsletter-input" type="email" name="email" placeholder="E-mail" />
-					</label>
-					<button class="newsletter-btn" type="submit">Zapisz się</button>
+					<h4 class="newsletter">Zapisz się do newslettera</h4>
+
+					<div class="newsletter-container">
+						<input
+							class="newsletter-input"
+							type="email"
+							name="newsletter_email"
+							placeholder="E-mail" />
+
+						<button class="newsletter-btn" type="submit">
+							Zapisz się
+							<svg width="24" height="24">
+								<use
+									href="./images/icons.svg#icon-icon-send"></use>
+							</svg>
+						</button>
+					</div>
 				</form>
 			</div>
 		</footer>
@@ -528,44 +540,71 @@
 						height="11" />
 				</button>
 
-				<form>
-					<!-- <label for="user_name">Imie</label> -->
-
-					<label>
-						Imie
-						<input type="text" name="name" id="user_name" />
-					</label>
-
-					<label
-						>Telefon
+				<h2 class="modal-title">
+					Zostaw swoje dane w formularzu poniżej
+				</h2>
+				<form class="modal-form">
+					<label class="form-label">
+						<span class="form-label-text">Imię</span>
 						<input
+							class="form-label-input"
+							type="text"
+							name="name" />
+						<svg class="form-label-icon">
+							<use
+								href="./images/icons.svg#icon-person-black-18dp"></use>
+						</svg>
+					</label>
+
+					<label class="form-label">
+						<span class="form-label-text">Telefon</span>
+						<input
+							class="form-label-input"
 							type="tel"
-							name="phone_number"
-							id="user_phone_number" />
+							name="phone_number" />
+						<svg class="form-label-icon">
+							<use
+								href="./images/icons.svg#icon-phone-black-18dp"></use>
+						</svg>
 					</label>
-					<label
-						>Email
-						<input type="email" name="email" id="user_email" />
+
+					<label class="form-label">
+						<span class="form-label-text">Email</span>
+						<input
+							class="form-label-input"
+							type="email"
+							name="user_email" />
+						<svg class="form-label-icon">
+							<use href="./images/icons.svg#icon-Vector"></use>
+						</svg>
 					</label>
-					<label>
-						Komentarz
+
+					<label class="form-label">
+						<span class="form-label-text">Komentarz</span>
 						<textarea
+							class="form-label-textarea"
 							name="feedback"
 							rows="5"
 							placeholder="Wprowadź tekst"></textarea>
 					</label>
 
-					<label>
+					<label class="form-checkbox">
 						<input
+							class="form-checkbox-text"
 							type="checkbox"
 							name="regulations"
-							value=""
-							checked />
-						Oświadczam iż akceptuję <a href="">Regulamin</a> i
-						<a href="">Politykę Prywatności.</a>
+							value="" />
+						Oświadczam iż akceptuję
+						<a href="" class="form-checkbox-link">Regulamin</a> i
+						<a href="" class="form-checkbox-link"
+							>Politykę Prywatności.</a
+						>
 					</label>
-
-					<button type="submit">Wyślij</button>
+					<div class="form-modal-btn-wrapper">
+						<button class="form-modal-btn" type="submit">
+							Wyślij
+						</button>
+					</div>
 				</form>
 			</div>
 		</div>
