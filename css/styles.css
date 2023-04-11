@@ -633,7 +633,7 @@ textarea {
 }
 
 .news {
-	display: flex;
+	display: inline;
 	flex-direction: row;
 	gap: 12px;
 }
