@@ -543,69 +543,82 @@
 				<h2 class="modal-title">
 					Zostaw swoje dane w formularzu poniżej
 				</h2>
+
 				<form class="modal-form">
-					<label class="form-label">
-						<span class="form-label-text">Imię</span>
+					<label for="user-name" class="form-label"> Imię</label>
+					<div class="modal-form-wrapper">
 						<input
-							class="form-label-input"
+							class="modal-form-input"
 							type="text"
-							name="name" />
-						<svg class="form-label-icon">
+							name="user-name" />
+						<svg class="modal-form-icon">
 							<use
 								href="./images/icons.svg#icon-person-black-18dp"></use>
 						</svg>
-					</label>
+					</div>
 
-					<label class="form-label">
-						<span class="form-label-text">Telefon</span>
+					<label for="user-phone-number" class="form-label"
+						>Telefon</label
+					>
+					<div class="modal-form-wrapper">
 						<input
-							class="form-label-input"
+							class="modal-form-input"
 							type="tel"
-							name="phone_number" />
-						<svg class="form-label-icon">
+							name="user-phone-number" />
+						<svg class="modal-form-icon">
 							<use
 								href="./images/icons.svg#icon-phone-black-18dp"></use>
 						</svg>
-					</label>
-
-					<label class="form-label">
-						<span class="form-label-text">Email</span>
-						<input
-							class="form-label-input"
-							type="email"
-							name="user_email" />
-						<svg class="form-label-icon">
-							<use href="./images/icons.svg#icon-Vector"></use>
-						</svg>
-					</label>
-
-					<label class="form-label">
-						<span class="form-label-text">Komentarz</span>
-						<textarea
-							class="form-label-textarea"
-							name="feedback"
-							rows="5"
-							placeholder="Wprowadź tekst"></textarea>
-					</label>
-
-					<div class="test">
-						<label class="form-checkbox">
-							<input
-								class="form-checkbox-text"
-								type="checkbox"
-								name="regulations"
-								value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności." />
-							Oświadczam iż akceptuję
-							<a href="" class="form-checkbox-link">Regulamin</a>
-							i
-							<a href="" class="form-checkbox-link"
-								>Politykę Prywatności.</a
-							>
-						</label>
 					</div>
 
-					<div class="form-modal-btn-wrapper">
-						<button class="form-modal-btn" type="submit">
+					<label for="user-email" class="form-label">Email</label>
+					<div class="modal-form-wrapper">
+						<input
+							class="modal-form-input"
+							type="email"
+							name="user-email" />
+						<svg class="modal-form-icon">
+							<use
+								href="./images/icons.svg#icon-email-black-18dp"></use>
+						</svg>
+					</div>
+
+					<label for="user-comment" class="form-label"
+						>Komentarz</label
+					>
+					<div class="modal-form-wrapper">
+						<textarea
+							class="modal-form-textarea"
+							name="user-comment"
+							rows="5"
+							placeholder="Wprowadź tekst"></textarea>
+					</div>
+
+					<label>
+						<input class="hidden-checkbox" type="checkbox" />
+						<div class="acceptation-box">
+							<div class="custom-checkbox">
+								<svg
+									class="checkbox-img"
+									width="16"
+									height="15">
+									<use
+										href="./images/icons.svg#icon-checkbox"></use>
+								</svg>
+							</div>
+							<span class="pronouncement-text">
+								Oświadczam iż akceptuję
+								<a href="" class="statute">Regulamin</a>
+								i
+								<a href="" class="statute"
+									>Politykę Prywatności.</a
+								>
+							</span>
+						</div>
+					</label>
+
+					<div class="modal-form-btn-wrapper">
+						<button class="modal-form-btn" type="submit">
 							Wyślij
 						</button>
 					</div>
