@@ -626,14 +626,11 @@ a {
 	margin-top: 40px;
 }
 
-.modal-form > label{
+.modal-form > label {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 }
-
-	
-	
 
 .form-label {
 	position: relative;
@@ -688,11 +685,9 @@ a {
 }
 
 .form-checkbox {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	flex-wrap: ;
+	/* display:flex; */
+	display: block;
+	position: relative;
 	margin-top: 20px;
 	margin-bottom: 30px;
 }
@@ -708,7 +703,6 @@ a {
 .form-checkbox-link {
 	color: var(--active-color);
 	text-decoration: underline;
-	cursor: pointer;
 }
 
 .form-modal-btn {
@@ -785,7 +779,3 @@ a {
 .newsletter-btn > svg {
 	fill: var(--bg-color);
 }
-
-/* NAPRAWIĆ MODAL
-
-RAMKI PO NAJECHANIU W MODALU */
