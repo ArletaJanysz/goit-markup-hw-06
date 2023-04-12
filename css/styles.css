@@ -778,7 +778,7 @@ a {
 	align-items: center;
 }
 
-.pronouncement-text {
+.checkbox-text {
 	color: var(--form-labels);
 	font-weight: 400;
 	font-size: 14px;
@@ -786,7 +786,7 @@ a {
 	letter-spacing: 0.03em;
 }
 
-.statute {
+.checkbox-link {
 	color: var(--active-color);
 }
 
