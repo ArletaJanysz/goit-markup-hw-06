@@ -758,6 +758,8 @@ a {
 
 .acceptation-box {
 	display: flex;
+	gap: 7px;
+	
 }
 
 
