@@ -626,11 +626,15 @@ a {
 	margin-top: 40px;
 }
 
-.modal-form > label {
+.modal-form > label{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
 }
+
+	
+	
+
 .form-label {
 	position: relative;
 	max-width: 448px;
@@ -657,6 +661,13 @@ a {
 	transition-timing-function: var(--cubic-bezier);
 }
 
+.form-label-input:is(:focus, :active),
+.form-label-textarea:is(:focus, :active),
+.form-label-icon:is(:focus, :active) {
+	fill: var(--active-color);
+	border-color: var(--active-color);
+}
+
 .form-label-icon {
 	position: absolute;
 	fill: var(--main-text-color);
@@ -677,8 +688,11 @@ a {
 }
 
 .form-checkbox {
-	display: block;
-	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	flex-wrap: ;
 	margin-top: 20px;
 	margin-bottom: 30px;
 }
@@ -773,5 +787,5 @@ a {
 }
 
 /* NAPRAWIĆ MODAL
-OGARNĄĆ NEWSLETTER W PORTFOLIO
+
 RAMKI PO NAJECHANIU W MODALU */
